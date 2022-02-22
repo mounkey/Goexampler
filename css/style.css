@@ -1,0 +1,512 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color:#00AA55;
+}
+/*head*/
+.uphead{
+  background-color: white;
+  width: auto; 
+  text-align: end; 
+  margin-bottom: 15px;
+}
+
+.uphead a{
+  text-decoration: none;
+  color: #00AA55; 
+  padding-right: 25px; 
+}
+
+.box__logo{
+  background-color: white;
+  width: auto;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+}
+
+.box__banner{
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: auto;
+}
+
+/*index*/
+
+.contenedor{
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px #00AA55 solid;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.contenedor__picture{
+  margin-top: 25px;
+  width: 30%;
+  height: 280px;
+}
+
+.contenedor__picture img{
+  padding: 5px 5px 5px 5px;
+}
+
+footer{
+  width: auto;
+  align-items: center;
+  color:white;
+  border: 2px white solid;
+  background-color: #00AA55; 
+  border-radius: 25px;
+}
+
+.sections{  
+  margin-top: 20px;
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.sections__box{
+  height: auto;
+}
+
+.sections__box a{
+  text-decoration: none;
+  color:white;
+}
+
+.box__title{
+  margin: 10px;
+  font-size: 30;
+  text-align: right;
+}
+
+.endfooter{
+  text-align: center;
+  font-size: medium;
+  color: white;
+}
+
+/*Contacto*/
+
+.titulocontacto{
+  color:white;  
+}
+
+.rrsscontacto{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.rs a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+}
+
+/* Servicios*/
+  main{
+    height: auto;
+    width: auto;
+    color: #00AA55;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  /*proyectos*/
+
+  .proyectos, .proyectos2{
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background-color: white;
+    color: #00AA55;
+    margin-top: 10px;
+  }
+  
+    /* qs*/ 
+
+  .proyectos__img{
+    text-align: center;
+
+  }   
+
+  .contenedorQs{
+    width: auto;
+    height: auto;
+  }
+
+  .contenedorQs__c1, .contenedor__c2{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .c1__picture img{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+  }
+
+  .c1__text{
+    background-color: white;
+    color: #00AA55;
+    border-radius: 20px;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .c2__picture{
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img2{
+    border:5px white solid;
+    width: 180px;
+    height: 180px;
+  }
+
+  .c2__RRSS{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    color:white
+  }
+
+  .c2__RRSS a{
+    color:white;
+  }
+  
+  .asociados{
+    color: white;
+  }
+  
+  .asociados p{
+    padding: 10px;
+  }
+  
+  .img_aso{
+    width: 350px;
+    height: 100px;
+  }
+
+
+
+/*query Madia*/
+
+@media screen and (max-width: 380px){
+  body{
+    display:grid;
+    grid-template-areas: 
+      "uphead"
+      "header"
+      "Relleno"
+      "footer"
+    ; 
+    font-size: large;
+  }
+  
+  .uphead{
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    padding-top: 10px;    
+    padding-right: 10px;
+    font-size: 20px;
+  }
+
+  .box{
+    display: grid;
+    grid-template-areas: 
+    "box__logo"
+    "box__banner";
+  }   
+
+  .box__logo{
+    height: 250px;
+    width: auto;
+  }
+
+  .box__banner{
+    margin-top: 0px;
+    height: 250px;
+    width: auto;
+    background-image: url("/imagen/go\ spa-05_2.png");
+  }
+
+  .box__logo img{
+    width: auto;
+    height: auto;
+  }
+
+  .box__banner img{
+    width: auto;
+    height: auto;
+  }
+
+  .sections__box{
+    padding-bottom: 15px;
+  }
+
+  footer{
+    height: auto;
+  }
+
+  .proyectos{
+    display: grid;
+    grid-template-rows: 1;
+    
+  }
+
+  /*QS*/
+
+  .contenedorQs1, .contenedorqs2{
+    display: grid;
+    grid-template-columns: 1;
+
+  }
+
+  .contenedorQs__c1, .contenedor__c2{
+    display: grid;
+    grid-template-columns: 1;
+    height: auto;
+  }
+
+  .c1__picture{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-content:space-evenly;
+    gap: 10px;
+    align-items: center;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .asociado__picture{
+    display: grid;
+    grid-template-columns: 1;
+    gap:10px;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+
+}
+
+@media screen and (min-width: 381px) and (max-width: 600px){
+  body{
+    display: grid;
+    grid-area:
+      "uphead"
+      "header"
+      "relleno"
+      "footer"
+    ;
+  }
+
+  .uphead{
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 25px;
+  }
+
+  .box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    gap: 10px;
+  }
+
+  .box__logo{
+    width: auto;
+    height: 250px;
+  }
+
+  .box__banner{
+    margin-top: 0px;
+    height: 250px;
+    width: auto;
+    background-image: url("/imagen/go\ spa-05_2.png");
+  }
+  .contenedor__picture{
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 601px){
+  body{
+    display: grid;
+    grid-area:
+      "uphead"
+      "header"
+      "relleno"
+      "footer"
+    ;   
+  }
+  .uphead{
+    margin-top: 15px;
+  }
+
+  .box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    gap: 10px;
+  }
+
+  .box__logo{
+    width: auto;
+    height: 250px;
+  }
+
+  .box__banner{
+    margin-top: 0px;
+    height: 250px;
+    width: auto;
+    background-image: url("/imagen/go\ spa-05_2.png");
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .contenedor__text{
+    width: 70%;
+    height: auto;
+  }
+  .contenedor__picture{
+    padding-top: 5% ;
+    width: 20%;
+    height: auto;
+  }
+
+  .contenedor__picture img{
+    width: 200px;
+    height: auto;
+  }
+
+  .sections{
+    display: grid;
+    grid-template-columns: 50% 50%  ;
+  }
+
+  .sections__box{
+    padding-left: 35px;
+  }
+
+  .contenedorQs1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .contenedorQs2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  
+  .c1__picture{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+  body{
+    display: grid;
+    grid-area:
+      "uphead"
+      "header"
+      "relleno"
+      "footer"
+    ;   
+  }
+
+  .uphead{
+    margin-top: 15px;
+  }
+
+  .box{
+    display: grid;
+    grid-template-columns: 20% 90%;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .box__logo{
+    width: auto;
+    height: 250px;
+  }
+
+  .box__banner{
+    margin-top: 0px;
+    height: 250px;
+    width: auto;
+    background-image: url("/imagen/go\ spa-05.png");
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  .contenedor__text{
+    width: 70%;
+    height: auto;
+  }
+  .contenedor__picture{
+    padding-top: 5% ;
+    width: 20%;
+    height: auto;
+  }
+
+  .contenedor__picture img{
+    width: 200px;
+    height: auto;
+  }
+
+  footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sections{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+  }
+
+  .sections__box{
+    padding-left: 35px;
+  }
+
+  .proyectos{
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  .proyectos2{
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+}
